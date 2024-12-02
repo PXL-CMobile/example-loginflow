@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginFlow.Views.LoginPage"
+             Title="LoginPage"
+             Shell.FlyoutBehavior="Disabled">
+    <VerticalStackLayout>
+        <Label 
+            Text="{Binding Name}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Button Text="Log in " Command="{Binding LoginCommand}"></Button>
+        <Button Text="Register " Command="{Binding RegisterCommand}"></Button>
+    </VerticalStackLayout>
+</ContentPage>
